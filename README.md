@@ -42,10 +42,10 @@ npm run build      # dist/ including dist/data/{offers,meta}.json
 2. Settings → Pages → Source: **GitHub Actions**.
 3. Actions → *daily* → *Run workflow* once. After that it runs every morning.
 
-The workflow tests the parsers, scrapes, commits `data/`, builds the site with
-`BASE_PATH=/<repo>/` and deploys it. If any store fails, the job still publishes (with
-that store's previous offers) and then fails, so GitHub emails you. With a custom domain,
-set `BASE_PATH: /` in the workflow.
+The workflow tests the parsers, scrapes, commits `data/`, builds the site with the
+base path GitHub Pages reports (`/` on a custom domain, `/<repo>/` otherwise) and deploys it. If any store fails, the job still publishes (with
+that store's previous offers) and then fails, so GitHub emails you.
+Custom domain: kataloginakratko.si (set in Settings → Pages; DNS A records to GitHub Pages).
 
 ## Data rules
 
