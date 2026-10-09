@@ -1,0 +1,209 @@
+{
+  "_comment": "Lidl keyfacts.wonCategoryPrimary path, matched case-insensitively as a substring. First match wins.",
+  "rules": [
+    [
+      "zamrznjena hrana",
+      "zamrznjeno"
+    ],
+    [
+      "zaloga hrane",
+      "shramba"
+    ],
+    [
+      "sadje in zelenjava",
+      "sadje-zelenjava"
+    ],
+    [
+      "meso in perutnina",
+      "meso-ribe"
+    ],
+    [
+      "ribe in morski sadeži/",
+      "meso-ribe"
+    ],
+    [
+      "hrana in bližnja hrana/ribe in morski",
+      "meso-ribe"
+    ],
+    [
+      "sir, mlečni izdelki in jajca",
+      "mlecni-jajca"
+    ],
+    [
+      "pekarna",
+      "kruh-pekovski"
+    ],
+    [
+      "sladkarije in prigrizki",
+      "sladko-slano"
+    ],
+    [
+      "müsli in namazi",
+      "shramba"
+    ],
+    [
+      "olja, začimbe in omake",
+      "shramba"
+    ],
+    [
+      "pripravljene jedi",
+      "shramba"
+    ],
+    [
+      "kava, čaj in kakav",
+      "pijace"
+    ],
+    [
+      "pijače/vino",
+      "alkohol"
+    ],
+    [
+      "/vino",
+      "alkohol"
+    ],
+    [
+      "šampanjec",
+      "alkohol"
+    ],
+    [
+      "žgane pijače",
+      "alkohol"
+    ],
+    [
+      "pivo",
+      "alkohol"
+    ],
+    [
+      "pijače",
+      "pijace"
+    ],
+    [
+      "dojenčki in otroci",
+      "otroci"
+    ],
+    [
+      "igrače",
+      "otroci"
+    ],
+    [
+      "drogerija in nega",
+      "nega-zdravje"
+    ],
+    [
+      "lepota in nega",
+      "nega-zdravje"
+    ],
+    [
+      "zdravje in dobro počutje",
+      "nega-zdravje"
+    ],
+    [
+      "proračun/higienični papir",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "proračun",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "čiščenje gospodinjstev",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "potrebe za hišne ljubljenčke",
+      "ljubljencki"
+    ],
+    [
+      "potrebščine za hišne živali",
+      "ljubljencki"
+    ],
+    [
+      "moda",
+      "oblacila"
+    ],
+    [
+      "oblačila",
+      "oblacila"
+    ],
+    [
+      "obutev",
+      "oblacila"
+    ],
+    [
+      "kuhanje in peka",
+      "dom-vrt-orodje"
+    ],
+    [
+      "kuhinj",
+      "dom-vrt-orodje"
+    ],
+    [
+      "postavitev mize",
+      "dom-vrt-orodje"
+    ],
+    [
+      "kopalnica",
+      "dom-vrt-orodje"
+    ],
+    [
+      "dekoracija",
+      "dom-vrt-orodje"
+    ],
+    [
+      "cvetje",
+      "dom-vrt-orodje"
+    ],
+    [
+      "vrt",
+      "dom-vrt-orodje"
+    ],
+    [
+      "orodj",
+      "dom-vrt-orodje"
+    ],
+    [
+      "delavnica",
+      "dom-vrt-orodje"
+    ],
+    [
+      "razsvetljava",
+      "dom-vrt-orodje"
+    ],
+    [
+      "dnevna soba",
+      "dom-vrt-orodje"
+    ],
+    [
+      "hodnik",
+      "dom-vrt-orodje"
+    ],
+    [
+      "shranjevanje",
+      "dom-vrt-orodje"
+    ],
+    [
+      "ogrevanje",
+      "dom-vrt-orodje"
+    ],
+    [
+      "gradnja",
+      "dom-vrt-orodje"
+    ],
+    [
+      "žar",
+      "dom-vrt-orodje"
+    ],
+    [
+      "avto",
+      "dom-vrt-orodje"
+    ],
+    [
+      "pohištvo",
+      "dom-vrt-orodje"
+    ],
+    [
+      "šport in prosti čas",
+      "dom-vrt-orodje"
+    ]
+  ]
+}

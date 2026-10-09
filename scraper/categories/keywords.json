@@ -1,0 +1,69 @@
+{
+  "_comment": "Fallback when the store category does not map: whole-word stems in the product name (lower-cased). First match wins.",
+  "rules": [
+    [
+      "ikeban",
+      "dom-vrt-orodje"
+    ],
+    [
+      "pivo|vino|cviček|teran|refošk|žganje|vodka|viski|whisky|gin|rum|liker|prosecco|penina|radler",
+      "alkohol"
+    ],
+    [
+      "sok|voda|kava|čaj|kakav|cola|napitek|limonada|ledeni",
+      "pijace"
+    ],
+    [
+      "mleko|jogurt|sir\\b|sira\\b|sirni|skuta|maslo|smetana|kefir|jajca|mozzarella|edamec|gauda|pudin",
+      "mlecni-jajca"
+    ],
+    [
+      "klobas|salam|šunk|pršut|piščan|puran|svinj|govej|teleč|meso|hrenovk|čevapčič|tuna|tunin|losos|riba|sardel|skuše|mesne kroglice|zrezk|file",
+      "meso-ribe"
+    ],
+    [
+      "kruh|žemlj|rogljič|bagete|toast|burek|pecivo|kroasan|štruc|lepinj|donut|krof",
+      "kruh-pekovski"
+    ],
+    [
+      "jabolk|banan|pomaranč|mandarin|grozdje|krompir|paradižnik|solata|kumar|paprik|čebul|korenje|limon|hrušk|jagod|motovilec|zelenjava|sadje|avokado|klementin|rukola|gobe\\b|šampinjon|česen|brokoli|bučk",
+      "sadje-zelenjava"
+    ],
+    [
+      "sladoled|zamrznjen|pizza",
+      "zamrznjeno"
+    ],
+    [
+      "čokolad|piškot|keks|bonbon|čips|krekerj|napolitank|vafelj|grisini|arašid|oreš",
+      "sladko-slano"
+    ],
+    [
+      "testenin|špageti|riž|moka|olje|kis|sladkor|sol|omaka|ketchup|majonez|juha|konzerv|fižol|začimb|kosmiči|müsli|med|marmelad|namaz",
+      "shramba"
+    ],
+    [
+      "šampon|gel za tuširanje|zobna|krema|dezodorant|milo|vitamin|tablete|britvic|vložki",
+      "nega-zdravje"
+    ],
+    [
+      "detergent|pralni|mehčalec|čistil|toaletni papir|brisače|vrečke|folija|tablete za pomivalni|pomivalni",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "plenice|otroški|otroška|dojenček|igrač",
+      "otroci"
+    ],
+    [
+      "pes|psi|mačk|briketi|hrana za živali",
+      "ljubljencki"
+    ],
+    [
+      "majica|hlače|nogavice|jakna|copat|čevlj|pulover|pižam|perilo|bunda|trenirk",
+      "oblacila"
+    ],
+    [
+      "orodje|vrtn|svetilk|lonec|ponev|odeja|blazin|vrtalnik|akumulator|polica|stol|miza|posoda|sveč|cvetj|vaza|ikeban|resje|nagrobn|pregrinjal|ogenj|smučk|sank",
+      "dom-vrt-orodje"
+    ]
+  ]
+}

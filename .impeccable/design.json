@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T16:03:51+00:00",
+  "title": "Design System: Katalogi na kratko",
+  "extensions": {
+    "colorMeta": {
+      "slate-900": {
+        "role": "primary",
+        "displayName": "Market Slate",
+        "canonical": "#1d2421",
+        "oklch": "oklch(25.2% 0.012 167.6)",
+        "tonalRamp": [
+          "#070d0a",
+          "#1f2623",
+          "#3a423e",
+          "#58605c",
+          "#77807c",
+          "#98a19d",
+          "#bdc7c2",
+          "#e8f1ed"
+        ]
+      },
+      "slate-700": {
+        "role": "neutral",
+        "displayName": "Slate 700",
+        "canonical": "#3a4540",
+        "oklch": "oklch(37.9% 0.017 166.3)",
+        "tonalRamp": [
+          "#050d0a",
+          "#1c2722",
+          "#38433e",
+          "#55615b",
+          "#74817b",
+          "#95a29c",
+          "#bbc8c2",
+          "#e5f2ec"
+        ]
+      },
+      "slate-500": {
+        "role": "neutral",
+        "displayName": "Slate 500",
+        "canonical": "#5c6761",
+        "oklch": "oklch(50.2% 0.016 162.0)",
+        "tonalRamp": [
+          "#050d09",
+          "#1d2722",
+          "#38433d",
+          "#56615b",
+          "#75807a",
+          "#96a29b",
+          "#bbc8c1",
+          "#e5f2eb"
+        ]
+      },
+      "stone-300": {
+        "role": "neutral",
+        "displayName": "Stone Hairline",
+        "canonical": "#c9cfc9",
+        "oklch": "oklch(84.8% 0.010 145.5)",
+        "tonalRamp": [
+          "#080c09",
+          "#212521",
+          "#3c413c",
+          "#5a5f5a",
+          "#797f79",
+          "#9aa09a",
+          "#c0c6c0",
+          "#eaf0ea"
+        ]
+      },
+      "stone-150": {
+        "role": "neutral",
+        "displayName": "Stone 150",
+        "canonical": "#e2e6e1",
+        "oklch": "oklch(92.0% 0.008 139.4)",
+        "tonalRamp": [
+          "#090c09",
+          "#222521",
+          "#3e413d",
+          "#5b5f5a",
+          "#7b7e7a",
+          "#9ca09b",
+          "#c1c5c0",
+          "#ecf0eb"
+        ]
+      },
+      "stone-50": {
+        "role": "neutral",
+        "displayName": "Limestone",
+        "canonical": "#eef0ec",
+        "oklch": "oklch(95.2% 0.006 128.5)",
+        "tonalRamp": [
+          "#0a0c09",
+          "#232522",
+          "#3f403d",
+          "#5d5e5b",
+          "#7c7e7a",
+          "#9d9f9b",
+          "#c3c5c1",
+          "#edefeb"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "bar-well": {
+        "role": "neutral",
+        "displayName": "Bar Well",
+        "canonical": "#2c3531",
+        "oklch": "oklch(31.9% 0.014 166.8)",
+        "tonalRamp": [
+          "#060d0a",
+          "#1e2623",
+          "#39423e",
+          "#56605c",
+          "#76807b",
+          "#97a19c",
+          "#bcc7c2",
+          "#e6f2ec"
+        ]
+      },
+      "paprika": {
+        "role": "secondary",
+        "displayName": "Paprika",
+        "canonical": "#d6311f",
+        "oklch": "oklch(57.3% 0.203 30.4)",
+        "tonalRamp": [
+          "#1e0100",
+          "#490501",
+          "#7a0d04",
+          "#ad1809",
+          "#dc3825",
+          "#fc6954",
+          "#feac9e",
+          "#ffe9e5"
+        ]
+      },
+      "yolk": {
+        "role": "tertiary",
+        "displayName": "Yolk",
+        "canonical": "#f7c51e",
+        "oklch": "oklch(84.4% 0.167 89.4)",
+        "tonalRamp": [
+          "#100a00",
+          "#2e2201",
+          "#4f3d03",
+          "#735a08",
+          "#99790e",
+          "#c0991c",
+          "#efbd02",
+          "#feedc1"
+        ]
+      },
+      "fresh-green": {
+        "role": "status",
+        "displayName": "Fresh Green",
+        "canonical": "#4cc26b",
+        "oklch": "oklch(72.6% 0.163 149.2)",
+        "tonalRamp": [
+          "#001003",
+          "#012d0f",
+          "#014e1e",
+          "#047130",
+          "#099642",
+          "#42b963",
+          "#6de188",
+          "#c8ffd0"
+        ]
+      },
+      "notice-cream": {
+        "role": "status",
+        "displayName": "Notice Cream",
+        "canonical": "#fff3cc",
+        "oklch": "oklch(96.4% 0.052 92.9)",
+        "tonalRamp": [
+          "#100b00",
+          "#2d2301",
+          "#493f1d",
+          "#685d3b",
+          "#887d5a",
+          "#a99e7a",
+          "#d0c49e",
+          "#faeec8"
+        ]
+      },
+      "notice-rule": {
+        "role": "status",
+        "displayName": "Notice Rule",
+        "canonical": "#ecd27a",
+        "oklch": "oklch(86.7% 0.112 93.4)",
+        "tonalRamp": [
+          "#100b00",
+          "#2d2301",
+          "#4d3e02",
+          "#705c06",
+          "#947b1b",
+          "#b69d44",
+          "#ddc36b",
+          "#feeeb9"
+        ]
+      },
+      "notice-ink": {
+        "role": "status",
+        "displayName": "Notice Ink",
+        "canonical": "#4a3b06",
+        "oklch": "oklch(35.9% 0.069 91.6)",
+        "tonalRamp": [
+          "#100a00",
+          "#2d2302",
+          "#4d3e0a",
+          "#6c5c2c",
+          "#8c7c4c",
+          "#ae9d6c",
+          "#d4c391",
+          "#ffeebd"
+        ]
+      },
+      "crate-sadje-zelenjava": {
+        "role": "category",
+        "displayName": "Fruit & Veg Green",
+        "canonical": "#2f8a45",
+        "oklch": "oklch(56.3% 0.135 148.2)",
+        "tonalRamp": [
+          "#001002",
+          "#022d0e",
+          "#034e1d",
+          "#09712d",
+          "#39924d",
+          "#5db56d",
+          "#83dc92",
+          "#c8ffcf"
+        ]
+      },
+      "crate-meso-ribe": {
+        "role": "category",
+        "displayName": "Butcher Red",
+        "canonical": "#a8322d",
+        "oklch": "oklch(49.5% 0.155 26.9)",
+        "tonalRamp": [
+          "#1f0001",
+          "#4a0204",
+          "#7b050b",
+          "#a32d29",
+          "#c95148",
+          "#ef7368",
+          "#fdaca2",
+          "#ffe9e6"
+        ]
+      },
+      "crate-mlecni-jajca": {
+        "role": "category",
+        "displayName": "Dairy Yolk",
+        "canonical": "#f2c230",
+        "oklch": "oklch(83.4% 0.158 89.0)",
+        "tonalRamp": [
+          "#100a00",
+          "#2e2201",
+          "#4f3d03",
+          "#735a09",
+          "#997910",
+          "#c29800",
+          "#edbd28",
+          "#ffedc1"
+        ]
+      },
+      "crate-kruh-pekovski": {
+        "role": "category",
+        "displayName": "Crust Brown",
+        "canonical": "#c98a3d",
+        "oklch": "oklch(68.3% 0.120 68.6)",
+        "tonalRamp": [
+          "#140800",
+          "#351e01",
+          "#5b3602",
+          "#835105",
+          "#ab6e1a",
+          "#cf8f43",
+          "#f7b56a",
+          "#ffebd6"
+        ]
+      },
+      "crate-shramba": {
+        "role": "category",
+        "displayName": "Pantry Orange",
+        "canonical": "#ef7d1a",
+        "oklch": "oklch(70.6% 0.170 53.7)",
+        "tonalRamp": [
+          "#170600",
+          "#3b1a01",
+          "#642f01",
+          "#8f4704",
+          "#be6008",
+          "#ed7b16",
+          "#feb07d",
+          "#ffeadd"
+        ]
+      },
+      "crate-zamrznjeno": {
+        "role": "category",
+        "displayName": "Frost Blue",
+        "canonical": "#3a8fc9",
+        "oklch": "oklch(62.5% 0.119 242.2)",
+        "tonalRamp": [
+          "#000c19",
+          "#01273f",
+          "#01446a",
+          "#036397",
+          "#2e84be",
+          "#53a7e2",
+          "#8bccfe",
+          "#e0f1ff"
+        ]
+      },
+      "crate-sladko-slano": {
+        "role": "category",
+        "displayName": "Cocoa",
+        "canonical": "#8a4b2f",
+        "oklch": "oklch(48.3% 0.095 43.9)",
+        "tonalRamp": [
+          "#190400",
+          "#401501",
+          "#672c0e",
+          "#894a2e",
+          "#ac6a4d",
+          "#d08b6d",
+          "#f9b192",
+          "#ffe9e1"
+        ]
+      },
+      "crate-pijace": {
+        "role": "category",
+        "displayName": "Drinks Teal",
+        "canonical": "#1f9a9a",
+        "oklch": "oklch(62.4% 0.100 194.9)",
+        "tonalRamp": [
+          "#000e0f",
+          "#002a2b",
+          "#004a4a",
+          "#016c6c",
+          "#038f90",
+          "#41b2b1",
+          "#6cd9d8",
+          "#b4fffe"
+        ]
+      },
+      "crate-alkohol": {
+        "role": "category",
+        "displayName": "Plum",
+        "canonical": "#6a2c5e",
+        "oklch": "oklch(39.9% 0.110 335.5)",
+        "tonalRamp": [
+          "#1a0016",
+          "#410338",
+          "#612456",
+          "#834376",
+          "#a66397",
+          "#c983b9",
+          "#f1a9e0",
+          "#ffe6f8"
+        ]
+      },
+      "crate-nega-zdravje": {
+        "role": "category",
+        "displayName": "Care Pink",
+        "canonical": "#c2417a",
+        "oklch": "oklch(57.3% 0.172 356.8)",
+        "tonalRamp": [
+          "#1d000c",
+          "#470225",
+          "#760441",
+          "#a2205f",
+          "#c8477f",
+          "#ef6aa0",
+          "#fda6c5",
+          "#ffe7ef"
+        ]
+      },
+      "crate-cistila-gospodinjstvo": {
+        "role": "category",
+        "displayName": "Cleaning Blue",
+        "canonical": "#4a6fd1",
+        "oklch": "oklch(56.5% 0.157 266.0)",
+        "tonalRamp": [
+          "#010134",
+          "#050e6e",
+          "#183491",
+          "#3355b5",
+          "#5177d9",
+          "#739afb",
+          "#a9c3ff",
+          "#e7efff"
+        ]
+      },
+      "crate-otroci": {
+        "role": "category",
+        "displayName": "Baby Pink",
+        "canonical": "#ff8fa3",
+        "oklch": "oklch(77.5% 0.136 9.3)",
+        "tonalRamp": [
+          "#1e0006",
+          "#480219",
+          "#760e30",
+          "#9a344d",
+          "#bf566c",
+          "#e5788c",
+          "#fda9b6",
+          "#ffe8eb"
+        ]
+      },
+      "crate-ljubljencki": {
+        "role": "category",
+        "displayName": "Pet Olive",
+        "canonical": "#7b8f2a",
+        "oklch": "oklch(61.4% 0.127 120.0)",
+        "tonalRamp": [
+          "#090d00",
+          "#202800",
+          "#3a4605",
+          "#56660d",
+          "#748820",
+          "#94aa48",
+          "#bad06e",
+          "#e3fb98"
+        ]
+      },
+      "crate-dom-vrt-orodje": {
+        "role": "category",
+        "displayName": "Tool Grey",
+        "canonical": "#5b6b73",
+        "oklch": "oklch(51.7% 0.023 229.4)",
+        "tonalRamp": [
+          "#020d13",
+          "#18262d",
+          "#33424a",
+          "#516068",
+          "#708088",
+          "#90a2aa",
+          "#b6c7d0",
+          "#e0f2fb"
+        ]
+      },
+      "crate-oblacila": {
+        "role": "category",
+        "displayName": "Textile Violet",
+        "canonical": "#7a5cc9",
+        "oklch": "oklch(55.8% 0.163 293.1)",
+        "tonalRamp": [
+          "#0f002a",
+          "#2b035f",
+          "#47218b",
+          "#6444af",
+          "#8366d4",
+          "#a488f9",
+          "#c6b9fe",
+          "#efecff"
+        ]
+      },
+      "crate-drugo": {
+        "role": "category",
+        "displayName": "Other Grey",
+        "canonical": "#9aa39d",
+        "oklch": "oklch(70.6% 0.013 156.9)",
+        "tonalRamp": [
+          "#070d09",
+          "#1f2621",
+          "#3a423d",
+          "#58605b",
+          "#77807a",
+          "#98a19b",
+          "#bdc7c1",
+          "#e8f1eb"
+        ]
+      },
+      "store-lidl": {
+        "role": "store-mark",
+        "displayName": "Lidl (borrowed)",
+        "canonical": "#0050aa",
+        "oklch": "oklch(44.7% 0.159 257.1)",
+        "tonalRamp": [
+          "#000a21",
+          "#01224f",
+          "#023c82",
+          "#115ab5",
+          "#377cda",
+          "#5d9ffb",
+          "#9fc7ff",
+          "#e5efff"
+        ]
+      },
+      "store-spar": {
+        "role": "store-mark",
+        "displayName": "Spar (borrowed)",
+        "canonical": "#d8232a",
+        "oklch": "oklch(56.8% 0.213 26.0)",
+        "tonalRamp": [
+          "#1f0001",
+          "#4a0105",
+          "#7c020d",
+          "#b10618",
+          "#e02d31",
+          "#fb6860",
+          "#feaba3",
+          "#ffe9e6"
+        ]
+      },
+      "store-eurospin": {
+        "role": "store-mark",
+        "displayName": "Eurospin (borrowed)",
+        "canonical": "#1a3e8c",
+        "oklch": "oklch(38.8% 0.137 263.0)",
+        "tonalRamp": [
+          "#00052d",
+          "#001961",
+          "#153986",
+          "#3259aa",
+          "#517ace",
+          "#719cf3",
+          "#a7c4fd",
+          "#e7effe"
+        ]
+      },
+      "store-hofer": {
+        "role": "store-mark",
+        "displayName": "Hofer (borrowed)",
+        "canonical": "#f39200",
+        "oklch": "oklch(74.5% 0.167 64.8)",
+        "tonalRamp": [
+          "#150800",
+          "#371d01",
+          "#5d3502",
+          "#864f06",
+          "#b16a0b",
+          "#dd8719",
+          "#feb264",
+          "#ffebd8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Price stake",
+        "purpose": "The price on every offer card; the largest, heaviest type on any card."
+      },
+      "discount": {
+        "displayName": "Discount corner",
+        "purpose": "The −NN% figure in the paprika corner."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Katalogi na kratko in header and footer; second half in yolk."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Empty/error state headings and the filter sheet title."
+      },
+      "title": {
+        "displayName": "Result count",
+        "purpose": "The number in the result count line."
+      },
+      "body": {
+        "displayName": "Offer name",
+        "purpose": "Product names, two-line clamp; filter rows sit at the same size."
+      },
+      "body-small": {
+        "displayName": "Meta",
+        "purpose": "Package, unit price, dates, store link."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase tracked filter group headings and card store names."
+      },
+      "count": {
+        "displayName": "Count",
+        "purpose": "Trailing counts in chips and rows."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lifted-sheet",
+        "value": "0 -12px 40px rgb(29 36 33 / .22)",
+        "purpose": "Phone filter sheet only, over a slate scrim at rgb(29 36 33 / .45)."
+      },
+      {
+        "name": "selection-ring",
+        "value": "0 0 0 2px #fff",
+        "purpose": "White ring around a swatch or dot inside a selected slate control (1.5px on small chips and pills)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-plant",
+        "value": "cubic-bezier(.22, 1, .36, 1)",
+        "purpose": "Shared easing for sheet slide, switch knob, heart press and View Transition re-plant."
+      },
+      {
+        "name": "replant",
+        "value": "0.44s ease-plant",
+        "purpose": "Cards moving or entering during a filter/sort View Transition; entering cards from translateY(-14px) scale(.96)."
+      },
+      {
+        "name": "unplant",
+        "value": "0.2s ease-in",
+        "purpose": "Cards leaving during a View Transition, to scale(.94) and opacity 0."
+      },
+      {
+        "name": "sheet",
+        "value": "0.34s ease-plant",
+        "purpose": "Phone filter sheet sliding up from translateY(105%)."
+      },
+      {
+        "name": "state",
+        "value": "0.15s",
+        "purpose": "Colour and background changes on hover and focus (search well, heart)."
+      },
+      {
+        "name": "shimmer",
+        "value": "1.4s linear infinite",
+        "purpose": "Loading ghost cards. All motion is disabled under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "520px"
+      },
+      {
+        "name": "tablet",
+        "value": "1023px"
+      },
+      {
+        "name": "shell-max",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": "top-bar",
+      "description": "Sticky slate header: logo stake, wordmark with yolk second half, search well, freshness line.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-brand\" href=\"#\"><svg width=\"30\" height=\"36\" viewBox=\"0 0 40 48\" aria-hidden=\"true\"><path fill=\"#fff\" d=\"M7 2h20l11 11v16a7 7 0 0 1-7 7H7a7 7 0 0 1-7-7V9a7 7 0 0 1 7-7z\"/><rect fill=\"#fff\" x=\"16.5\" y=\"35\" width=\"7\" height=\"13\" rx=\"1.5\"/><circle fill=\"#1d2421\" cx=\"11.5\" cy=\"12.5\" r=\"4.2\"/><circle fill=\"#1d2421\" cx=\"25.5\" cy=\"26\" r=\"4.2\"/><rect fill=\"#1d2421\" x=\"16.4\" y=\"5.5\" width=\"4.4\" height=\"27\" rx=\"2.2\" transform=\"rotate(32 18.6 19)\"/></svg><span class=\"ds-word\">Katalogi <em>na kratko</em></span></a><label class=\"ds-search\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.6-3.6\"/></svg><input type=\"search\" placeholder=\"Išči izdelek ali znamko\"></label><p class=\"ds-fresh\"><span class=\"ds-dot\"></span><span>Posodobljeno <b>danes</b></span></p></header>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-bar{display:flex;align-items:center;gap:20px;min-height:64px;padding:10px 24px;background:var(--slate-900);color:#fff} .ds-brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none} .ds-word{font-weight:860;font-stretch:82%;font-size:1.32rem;letter-spacing:-.015em;white-space:nowrap} .ds-word em{font-style:normal;color:var(--yolk)} .ds-search{flex:1;display:flex;align-items:center;gap:10px;height:44px;padding:0 14px;border-radius:10px;background:#2c3531;color:#b8c1bb;transition:background .15s} .ds-search:focus-within{background:#fff;color:var(--slate-900);outline:2px solid var(--yolk);outline-offset:2px} .ds-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:inherit;font:inherit;font-size:1rem;font-weight:500} .ds-fresh{margin:0;display:flex;align-items:center;gap:8px;font-size:.8rem;color:#b8c1bb;white-space:nowrap} .ds-fresh b{color:#fff} .ds-dot{width:8px;height:8px;border-radius:50%;background:#4cc26b} .ds-brand:focus-visible{outline:2px solid var(--yolk);outline-offset:2px;border-radius:6px}"
+    },
+    {
+      "name": "Offer Card",
+      "kind": "card",
+      "refersTo": "offer-card",
+      "description": "The crate: 6px category edge, contained photo, notched slate price stake over the photo edge, paprika discount corner, store, struck price, two-line name, meta, date.",
+      "html": "<article class=\"ds-offer\" style=\"--crate:#1f9a9a\"><div class=\"ds-photo\"><span class=\"ds-ph\">foto</span><span class=\"ds-pct\">−30<small>%</small></span><button class=\"ds-fav\" aria-label=\"Shrani med priljubljene\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 20s-7.5-4.4-8.9-9C2 7.5 4.3 4.5 7.6 4.5c2 0 3.4 1.1 4.4 2.6 1-1.5 2.4-2.6 4.4-2.6 3.3 0 5.6 3 4.5 6.5-1.4 4.6-8.9 9-8.9 9z\"/></svg></button><div class=\"ds-stake ds-notch\"><span class=\"ds-tab\">z Lidl Plus</span><span class=\"ds-price\">4<span class=\"ds-cents\">,89</span><span class=\"ds-eur\">€</span></span></div></div><div class=\"ds-body\"><div class=\"ds-line\"><span class=\"ds-store\" style=\"--store:#0050aa\">Lidl</span><s class=\"ds-was\">6,99 €</s></div><h3 class=\"ds-name\"><b>Sportyfeel</b> Kreatin monohidrat</h3><p class=\"ds-meta\">200 g · 1 kg = 24,45 €</p><div class=\"ds-foot\"><span class=\"ds-when\">do 15. 10.</span></div></div></article>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-stake{display:inline-flex;flex-direction:column;align-items:flex-start;gap:0} .ds-price{display:flex;align-items:baseline;background:var(--slate-900);color:#fff;font-weight:900;font-stretch:70%;font-size:2rem;line-height:1;letter-spacing:-.01em;padding:6px 11px 7px 10px;border-radius:8px} .ds-cents{font-size:.62em;align-self:flex-start;margin-top:.12em} .ds-eur{font-size:.5em;font-weight:700;margin-left:3px;color:var(--stone-300)} .ds-tab{background:var(--yolk);color:var(--slate-900);font-size:.68rem;font-weight:800;padding:3px 7px 4px;border-radius:6px 6px 0 0;margin-left:6px} .ds-offer{width:220px;display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--stone-300);border-top:0;border-radius:12px;overflow:hidden} .ds-offer::before{content:\"\";height:6px;background:var(--crate)} .ds-photo{position:relative;aspect-ratio:5/4;display:grid;place-items:center;background:#fff;border-bottom:1px solid var(--stone-150)} .ds-ph{font-weight:800;font-stretch:80%;color:var(--stone-300);text-transform:uppercase} .ds-pct{position:absolute;top:0;right:0;background:var(--paprika);color:#fff;font-weight:900;font-stretch:78%;font-size:1.3rem;line-height:1;padding:7px 10px 8px 12px;border-radius:0 0 0 14px} .ds-pct small{font-size:.7em} .ds-fav{position:absolute;top:8px;left:8px;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--stone-150);border-radius:50%;background:rgb(255 255 255/.92);color:var(--slate-500);cursor:pointer;transition:color .15s,transform .2s cubic-bezier(.22,1,.36,1)} .ds-fav:hover{color:var(--slate-900)} .ds-fav:active{transform:scale(.88)} .ds-fav:focus-visible{outline:2px solid var(--slate-900);outline-offset:2px} .ds-photo .ds-stake{position:absolute;left:10px;bottom:0;transform:translateY(50%)} .ds-notch .ds-price{clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%)} .ds-body{display:flex;flex-direction:column;gap:5px;padding:30px 12px 12px} .ds-line{display:flex;justify-content:space-between;align-items:baseline} .ds-store{display:inline-flex;align-items:center;gap:5px;font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase} .ds-store::before{content:\"\";width:7px;height:7px;border-radius:2px;background:var(--store)} .ds-was{color:var(--slate-500);font-size:.82rem;font-weight:600;text-decoration-thickness:1.5px;text-decoration-color:var(--paprika)} .ds-name{margin:0;font-size:.9rem;font-weight:650;line-height:1.28} .ds-name b{font-weight:800} .ds-meta{margin:0;font-size:.76rem;color:var(--slate-500)} .ds-foot{padding-top:6px;border-top:1px solid var(--stone-150);font-size:.76rem} .ds-when{font-weight:700;color:var(--slate-700)}"
+    },
+    {
+      "name": "Price Stakes",
+      "kind": "custom",
+      "refersTo": "stake-discount",
+      "description": "Shape encodes kind: notched slate board = discount, yolk coin = posebna ponudba, dashed board = starts later.",
+      "html": "<div class=\"ds-row\"><div class=\"ds-stake ds-notch\"><span class=\"ds-price\">1<span class=\"ds-cents\">,99</span><span class=\"ds-eur\">€</span></span></div><div class=\"ds-stake ds-coin\"><span class=\"ds-price\">2<span class=\"ds-cents\">,49</span><span class=\"ds-eur\">€</span></span></div><div class=\"ds-stake ds-later\"><span class=\"ds-tab\">ob nakupu 2</span><span class=\"ds-price\">4<span class=\"ds-cents\">,89</span><span class=\"ds-eur\">€</span></span></div></div>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-stake{display:inline-flex;flex-direction:column;align-items:flex-start;gap:0} .ds-price{display:flex;align-items:baseline;background:var(--slate-900);color:#fff;font-weight:900;font-stretch:70%;font-size:2rem;line-height:1;letter-spacing:-.01em;padding:6px 11px 7px 10px;border-radius:8px} .ds-cents{font-size:.62em;align-self:flex-start;margin-top:.12em} .ds-eur{font-size:.5em;font-weight:700;margin-left:3px;color:var(--stone-300)} .ds-tab{background:var(--yolk);color:var(--slate-900);font-size:.68rem;font-weight:800;padding:3px 7px 4px;border-radius:6px 6px 0 0;margin-left:6px} .ds-row{display:flex;gap:16px;align-items:flex-end} .ds-notch .ds-price{clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%)} .ds-coin .ds-price{background:var(--yolk);color:var(--slate-900);border-radius:999px;padding-inline:14px} .ds-coin .ds-eur{color:var(--slate-700)} .ds-later .ds-price{background:#fff;color:var(--slate-900);outline:2px dashed var(--slate-900);outline-offset:-2px} .ds-later .ds-eur{color:var(--slate-500)}"
+    },
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Default bordered paper button, e.g. Filtri (with paprika count badge), Pokaži več.",
+      "html": "<button class=\"ds-btn\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M4 6h16M7 12h10M10 18h4\"/></svg>Filtri<span class=\"ds-badge\">3</span></button>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:40px;padding:0 16px;border-radius:10px;border:1px solid var(--stone-300);background:var(--paper);color:var(--slate-900);font:inherit;font-weight:750;font-size:.9rem;cursor:pointer} .ds-btn:hover{border-color:var(--slate-500)} .ds-btn:disabled{color:var(--slate-500);border-color:var(--stone-150);background:transparent} .ds-badge{min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:var(--paprika);color:#fff;font-size:.74rem;display:grid;place-items:center} :focus-visible{outline:2px solid var(--slate-900);outline-offset:2px}"
+    },
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "Slate primary action: Pokaži N izdelkov, Počisti filtre.",
+      "html": "<button class=\"ds-btn-solid\">Pokaži 103 izdelke</button>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-btn-solid{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 16px;border-radius:10px;border:1px solid var(--slate-900);background:var(--slate-900);color:#fff;font:inherit;font-weight:750;font-size:.9rem;cursor:pointer;transition:background .15s} .ds-btn-solid:hover{background:var(--slate-700)} .ds-btn-solid:focus-visible{outline:2px solid var(--slate-900);outline-offset:2px}"
+    },
+    {
+      "name": "Crate Chip",
+      "kind": "chip",
+      "refersTo": "crate-chip",
+      "description": "Phone category rail chip: swatch, label, count; slate when chosen with a white-ringed swatch.",
+      "html": "<div class=\"ds-rail\"><button class=\"ds-chip ds-on\" aria-pressed=\"true\" style=\"--crate:#1f9a9a\"><i class=\"ds-sw\"></i>Pijače <span class=\"ds-n\">103</span></button><button class=\"ds-chip\" style=\"--crate:#2f8a45\"><i class=\"ds-sw\"></i>Sadje in zelenjava <span class=\"ds-n\">33</span></button><button class=\"ds-chip\" disabled style=\"--crate:#a8322d\"><i class=\"ds-sw\"></i>Meso in ribe <span class=\"ds-n\">0</span></button></div>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-rail{display:flex;gap:6px;flex-wrap:wrap} .ds-chip{display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--stone-300);background:var(--paper);color:var(--slate-900);font:inherit;font-size:.86rem;font-weight:650;cursor:pointer} .ds-chip:hover:not(:disabled){border-color:var(--slate-500)} .ds-chip:disabled{opacity:.4;cursor:default} .ds-on{background:var(--slate-900);border-color:var(--slate-900);color:#fff} .ds-sw{width:11px;height:11px;border-radius:3px;background:var(--crate)} .ds-on .ds-sw{box-shadow:0 0 0 2px #fff} .ds-n{font-weight:600;font-size:.82em;color:var(--slate-500)} .ds-on .ds-n{color:var(--stone-300)} :focus-visible{outline:2px solid var(--slate-900);outline-offset:2px}"
+    },
+    {
+      "name": "Filter Rows",
+      "kind": "nav",
+      "refersTo": "filter-row-on",
+      "description": "Store and category rows in the filter column: dot or swatch, label, count; stone hover, slate when chosen.",
+      "html": "<div class=\"ds-block\"><h3 class=\"ds-h\">Trgovine</h3><button class=\"ds-row ds-on\" style=\"--c:#0050aa\"><i class=\"ds-dot\"></i><span class=\"ds-l\">Lidl</span><span class=\"ds-n\">35</span></button><button class=\"ds-row\" style=\"--c:#d8232a\"><i class=\"ds-dot\"></i><span class=\"ds-l\">Spar</span><span class=\"ds-n\">61</span></button><button class=\"ds-row\" disabled style=\"--c:#f39200\"><i class=\"ds-dot\"></i><span class=\"ds-l\">Hofer</span><span class=\"ds-n ds-soon\">kmalu</span></button></div>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-block{width:268px;padding:16px 0;border-bottom:1px solid var(--stone-150)} .ds-h{margin:0 0 10px;font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--slate-700)} .ds-row{width:100%;display:flex;align-items:center;gap:10px;padding:8px;border:0;border-radius:8px;background:transparent;color:var(--slate-900);font:inherit;font-size:.95rem;font-weight:750;text-align:left;cursor:pointer} .ds-row:hover:not(:disabled){background:var(--stone-150)} .ds-row:disabled{opacity:.38;cursor:default} .ds-on{background:var(--slate-900);color:#fff} .ds-l{flex:1} .ds-dot{width:11px;height:11px;border-radius:50%;background:var(--c)} .ds-on .ds-dot{box-shadow:0 0 0 2px #fff} .ds-n{font-weight:600;font-size:.82em;color:var(--slate-500)} .ds-on .ds-n{color:var(--stone-300)} .ds-soon{font-size:.7rem;text-transform:uppercase;letter-spacing:.05em} :focus-visible{outline:2px solid var(--slate-900);outline-offset:2px}"
+    },
+    {
+      "name": "Active Filter Pills",
+      "kind": "chip",
+      "refersTo": "active-pill",
+      "description": "Removable slate pills for every active filter, plus an underlined Počisti vse.",
+      "html": "<div class=\"ds-active\"><button class=\"ds-pill\" style=\"--crate:#1f9a9a\"><i class=\"ds-sw\"></i>Pijače<svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button><button class=\"ds-pill\">vsaj −30 %<svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button><button class=\"ds-pill ds-clear\">Počisti vse</button></div>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-active{display:flex;flex-wrap:wrap;gap:6px} .ds-pill{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 9px 0 11px;border-radius:999px;border:0;background:var(--slate-900);color:#fff;font:inherit;font-size:.8rem;font-weight:650;cursor:pointer} .ds-pill svg{opacity:.7} .ds-pill:hover svg{opacity:1} .ds-sw{width:9px;height:9px;border-radius:3px;background:var(--crate);box-shadow:0 0 0 1.5px #fff} .ds-clear{background:transparent;color:var(--slate-700);text-decoration:underline;text-underline-offset:3px;padding:0 6px} :focus-visible{outline:2px solid var(--slate-900);outline-offset:2px}"
+    },
+    {
+      "name": "Price Field and Discount Slider",
+      "kind": "input",
+      "refersTo": "price-field",
+      "description": "Bordered euro fields and the yolk-thumb discount slider.",
+      "html": "<div class=\"ds-wrap\"><div class=\"ds-range\"><label class=\"ds-field\"><input type=\"number\" placeholder=\"od\"><i>€</i></label><span class=\"ds-dash\"></span><label class=\"ds-field\"><input type=\"number\" placeholder=\"do\"><i>€</i></label></div><input class=\"ds-slider\" type=\"range\" min=\"0\" max=\"70\" step=\"5\" value=\"30\" style=\"--v:43%\" aria-label=\"Najmanjši popust\"></div>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-wrap{width:268px;display:grid;gap:16px} .ds-range{display:flex;align-items:center;gap:8px} .ds-field{flex:1;display:flex;align-items:center;height:40px;padding:0 10px;border:1px solid var(--stone-300);border-radius:10px;background:var(--paper)} .ds-field:focus-within{border-color:var(--slate-900);box-shadow:inset 0 0 0 1px var(--slate-900)} .ds-field input{width:100%;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-weight:650} .ds-field input::placeholder{color:var(--slate-500);font-weight:500} .ds-field i{font-style:normal;color:var(--slate-500);font-weight:600} .ds-dash{width:10px;height:2px;background:var(--stone-300)} .ds-slider{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;margin:0} .ds-slider::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--slate-900) var(--v),var(--stone-150) var(--v))} .ds-slider::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-8px;border-radius:50%;background:var(--yolk);border:3px solid var(--slate-900)} .ds-slider::-moz-range-track{height:6px;border-radius:3px;background:var(--stone-150)} .ds-slider::-moz-range-progress{height:6px;border-radius:3px;background:var(--slate-900)} .ds-slider::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--yolk);border:3px solid var(--slate-900)} .ds-slider:focus-visible{outline:2px solid var(--slate-900);outline-offset:2px}"
+    },
+    {
+      "name": "Segmented Control and Switch",
+      "kind": "input",
+      "refersTo": "segmented",
+      "description": "Validity segments on a stone track, and the slate switch with a yolk knob.",
+      "html": "<div class=\"ds-wrap\"><div class=\"ds-seg\" role=\"radiogroup\"><label class=\"ds-on\"><input type=\"radio\" name=\"w\" checked>Vse</label><label><input type=\"radio\" name=\"w\">Velja danes</label><label><input type=\"radio\" name=\"w\">Kmalu</label></div><label class=\"ds-switch\"><input type=\"checkbox\" checked><i></i>Samo popusti, brez posebnih ponudb</label></div>",
+      "css": ":host{--slate-900:#1d2421;--slate-700:#3a4540;--slate-500:#5c6761;--stone-300:#c9cfc9;--stone-150:#e2e6e1;--stone-50:#eef0ec;--paper:#fff;--paprika:#d6311f;--yolk:#f7c51e;font-family:\"Archivo Variable\",Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--slate-900)} .ds-wrap{width:268px;display:grid;gap:16px} .ds-seg{display:grid;grid-template-columns:repeat(3,1fr);padding:3px;border-radius:10px;background:var(--stone-150)} .ds-seg label{position:relative;display:grid;place-items:center;height:34px;border-radius:8px;font-size:.82rem;font-weight:650;color:var(--slate-700);cursor:pointer} .ds-seg label.ds-on{background:var(--slate-900);color:#fff} .ds-seg input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer} .ds-seg label:has(input:focus-visible){outline:2px solid var(--slate-900);outline-offset:2px} .ds-switch{display:flex;align-items:center;gap:10px;font-size:.88rem;font-weight:560;cursor:pointer} .ds-switch input{position:absolute;opacity:0;width:1px;height:1px} .ds-switch i{position:relative;flex-shrink:0;width:36px;height:22px;border-radius:999px;background:var(--stone-300);transition:background .2s} .ds-switch i::after{content:\"\";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .25s cubic-bezier(.22,1,.36,1)} .ds-switch input:checked+i{background:var(--slate-900)} .ds-switch input:checked+i::after{transform:translateX(14px);background:var(--yolk)} .ds-switch input:focus-visible+i{outline:2px solid var(--slate-900);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Tržnica",
+    "overview": "The page is a Ljubljana market stall seen from the aisle. A slate header and slate price boards sit over a cool limestone ground, and every offer is a crate whose painted top edge tells you what is inside. The price you pay is chalk-white on slate, condensed and black, planted half on the photo and half on the card. Everything else steps back: hairline stone borders, small type for the store and dates, and colour kept in narrow strips and dots so a phone screen can carry many offers at once.\n\nThe system is dense and practical. It is built for scanning with one hand, so the order of attention is fixed: price stake first, then the paprika discount corner, then the product name, then store and dates. Slate does double duty as ink and as the \"chosen\" state. Selected crates, stores, segments and filter pills all go slate with white text, which makes the stall's boards and the visitor's choices one family. Yolk is the market's chalk-highlight: it marks the wordmark's second half, loyalty-card tabs, the round coin for single-price offers, and the knobs of sliders and switches.\n\nThe world rejects the generic offer-aggregator card (white tile, pink percentage pill) and any look that leans toward one chain's livery. Store colours are borrowed marks and appear only as tiny dots.",
+    "keyCharacteristics": [
+      "Slate (#1d2421) header, footer, price stakes and every selected state; limestone (#eef0ec) ground.",
+      "One cool slate-to-stone neutral ramp in six steps, plus white paper for cards and fields.",
+      "Sixteen produce-crate hues, each living only on a 6px card edge or an 11px swatch.",
+      "Archivo Variable with narrow, black, tabular numerals for prices and counts.",
+      "Stake shape tells the offer type: notched board for discounts, yolk coin for single-price offers, dashed board for offers that start later.",
+      "Flat hairline surfaces; the phone filter sheet is the only thing lifted.",
+      "Sorting and filtering re-plant the cards through a View Transition."
+    ],
+    "rules": [
+      {
+        "name": "The Slate Means Chosen Rule",
+        "body": "Any selected state is a slate fill with white text, and a selected swatch or dot gets a 2px white ring. No other colour signals selection.",
+        "section": "colors"
+      },
+      {
+        "name": "The Crate Edge Rule",
+        "body": "Category hues are strips and swatches, never fields, text or backgrounds. If a crate colour covers more than a 6px edge or an 11px square, it is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Borrowed Livery Rule",
+        "body": "Store colours stay at dot size. No chain's colour ever tints a card, header or button, so no store looks favoured.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paprika Bite Rule",
+        "body": "Paprika is the discount corner plus small marks of loss or urgency. It is never a button, a background or a heading colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Narrow Numerals Rule",
+        "body": "Prices, percentages and totals are condensed (70–80% width) and black (900). Running text is never condensed.",
+        "section": "typography"
+      },
+      {
+        "name": "The Price Wins Rule",
+        "body": "On any card the price stake is the largest, heaviest type. Nothing else on the card goes above 1.3rem.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lifted Sheet Rule",
+        "body": "Only the filter sheet casts a shadow. Cards, chips, buttons and the bar never do.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Shape Encodes Kind Rule",
+        "body": "Notch, coin and dash are the only stake variants, and each means one offer type. Never use them as decoration.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do put every selected state in slate (#1d2421) with white text, and ring its swatch or dot in 2px white.",
+      "Do set prices, percentages and totals in Archivo at weight 900 and 70–80% width with tabular figures.",
+      "Do keep the price stake the largest element on a card, half over the photo's lower border.",
+      "Do choose the stake shape by offer kind: notched for discounts, yolk coin for single-price, dashed for later.",
+      "Do separate surfaces with 1px stone hairlines and tone, on a limestone (#eef0ec) ground.",
+      "Do use yolk for highlights and focus rings on slate."
+    ],
+    "donts": [
+      "Don't use crate hues outside the 6px card edge and the 11px swatch.",
+      "Don't let a store colour grow beyond a dot or small square, or tint any surface.",
+      "Don't use paprika for buttons, backgrounds or headings; it is the discount corner and small urgency marks only.",
+      "Don't add shadows to cards, chips, buttons or the bar; only the phone filter sheet lifts.",
+      "Don't condense running text or product names; narrow widths are for numbers and the wordmark.",
+      "Don't use the generic aggregator look: a plain white tile with a pink percentage pill.",
+      "Don't add a dark theme; the stall is light only."
+    ]
+  }
+}

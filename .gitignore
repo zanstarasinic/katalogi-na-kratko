@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+web/node_modules/
+web/dist/
+.DS_Store
+# design-process scratch (screenshots, decision mocks, local state)
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/brief-body.md

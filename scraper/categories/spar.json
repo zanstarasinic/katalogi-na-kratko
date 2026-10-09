@@ -1,0 +1,197 @@
+{
+  "_comment": "SPAR Online categoryNamesPath of the product's deepest non-'AKTUALNO' category, matched case-insensitively as a substring. First match wins, so specific rules come first.",
+  "rules": [
+    [
+      "/zamrznjen",
+      "zamrznjeno"
+    ],
+    [
+      "sladoled",
+      "zamrznjeno"
+    ],
+    [
+      "/vse za male živali",
+      "ljubljencki"
+    ],
+    [
+      "toaletni papir",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "otroške, mladinske knjige",
+      "otroci"
+    ],
+    [
+      "/gospodinjski aparati",
+      "dom-vrt-orodje"
+    ],
+    [
+      "čistila",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "pripomočki za čiščenje",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "osvežilci zraka",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "vse za odpadke",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "papirnati",
+      "cistila-gospodinjstvo"
+    ],
+    [
+      "prehranska dopolnila",
+      "nega-zdravje"
+    ],
+    [
+      "žgane",
+      "alkohol"
+    ],
+    [
+      "alkoholne pijače",
+      "alkohol"
+    ],
+    [
+      "/vino",
+      "alkohol"
+    ],
+    [
+      "/pivo",
+      "alkohol"
+    ],
+    [
+      "/čaj",
+      "pijace"
+    ],
+    [
+      "/kava",
+      "pijace"
+    ],
+    [
+      "/kakav",
+      "pijace"
+    ],
+    [
+      "/pijače",
+      "pijace"
+    ],
+    [
+      "/sadje in zelenjava",
+      "sadje-zelenjava"
+    ],
+    [
+      "/sveže meso",
+      "meso-ribe"
+    ],
+    [
+      "/delikatesa",
+      "meso-ribe"
+    ],
+    [
+      "/hlajeni in mlečni",
+      "mlecni-jajca"
+    ],
+    [
+      "/mlečni izdelki",
+      "mlecni-jajca"
+    ],
+    [
+      "jajca",
+      "mlecni-jajca"
+    ],
+    [
+      "/kruh",
+      "kruh-pekovski"
+    ],
+    [
+      "pekarna",
+      "kruh-pekovski"
+    ],
+    [
+      "pekovsk",
+      "kruh-pekovski"
+    ],
+    [
+      "/sladki in slani prigrizki",
+      "sladko-slano"
+    ],
+    [
+      "/shramba",
+      "shramba"
+    ],
+    [
+      "/vse za zajtrk",
+      "shramba"
+    ],
+    [
+      "/bio in druga posebna hrana",
+      "shramba"
+    ],
+    [
+      "/vse za otroka",
+      "otroci"
+    ],
+    [
+      "/otroški",
+      "otroci"
+    ],
+    [
+      "/dojenčki",
+      "otroci"
+    ],
+    [
+      "/osebna nega",
+      "nega-zdravje"
+    ],
+    [
+      "/drogerija",
+      "nega-zdravje"
+    ],
+    [
+      "/kozmetika",
+      "nega-zdravje"
+    ],
+    [
+      "/hišni ljubljenčki",
+      "ljubljencki"
+    ],
+    [
+      "/živali",
+      "ljubljencki"
+    ],
+    [
+      "/oblačila",
+      "oblacila"
+    ],
+    [
+      "/kuhinja",
+      "dom-vrt-orodje"
+    ],
+    [
+      "/izdelki za dom",
+      "dom-vrt-orodje"
+    ],
+    [
+      "/gospodinjski aparati",
+      "dom-vrt-orodje"
+    ],
+    [
+      "/elektronika",
+      "dom-vrt-orodje"
+    ],
+    [
+      "/vrt",
+      "dom-vrt-orodje"
+    ],
+    [
+      "/dom",
+      "dom-vrt-orodje"
+    ]
+  ]
+}

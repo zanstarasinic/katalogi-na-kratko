@@ -1,0 +1,26 @@
+{
+  "_comment": "Eurospin category_filter value (lower-cased), exact or substring match. First match wins.",
+  "rules": [
+    ["alkoholne pijače", "alkohol"],
+    ["detergenti", "cistila-gospodinjstvo"],
+    ["papir/plastika", "cistila-gospodinjstvo"],
+    ["gastronomija", "shramba"],
+    ["izdelki za zajtrk in keksi", "sladko-slano"],
+    ["izdelki za živali", "ljubljencki"],
+    ["konzerve", "shramba"],
+    ["kuhinja, dom in osebna nega", "dom-vrt-orodje"],
+    ["mlečni izdelki", "mlecni-jajca"],
+    ["narezki in sveži izdelki", "meso-ribe"],
+    ["olja/kis", "shramba"],
+    ["parfumi", "nega-zdravje"],
+    ["prigrizki", "sladko-slano"],
+    ["ribe in meso v konzervi", "shramba"],
+    ["slaščice in čokolade", "sladko-slano"],
+    ["sol/sladkor/moke", "shramba"],
+    ["suho sadje", "sladko-slano"],
+    ["testenine", "shramba"],
+    ["voda, pijače in sokovi", "pijace"],
+    ["zamrznjeni izdelki", "zamrznjeno"],
+    ["artikli spot", "dom-vrt-orodje"]
+  ]
+}

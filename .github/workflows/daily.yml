@@ -1,0 +1,81 @@
+name: daily
+
+on:
+  schedule:
+    - cron: "15 4 * * *"   # every morning, 06:15 Ljubljana summer time / 05:15 winter
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["web/**", "scraper/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test scraper (saved samples, no network)
+        run: |
+          pip install -r requirements-dev.txt
+          python -m pytest -q scraper/tests
+
+      - name: Scrape stores
+        id: scrape
+        # Only on schedule/manual runs. A failing store keeps yesterday's data; the job is
+        # marked failed at the very end (after publishing) so GitHub emails you.
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python -m scraper.run
+
+      - name: Commit data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: $(date -u +%F)"
+          git push
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build site
+        working-directory: web
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+        run: |
+          npm ci
+          npm test
+          npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Fail if any store failed
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::error::At least one store failed; see the 'Scrape stores' step. Its previous offers were kept."
+          exit 1
