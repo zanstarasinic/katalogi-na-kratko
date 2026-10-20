@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { izdelkov } from './format'
+import { izdelkov, startDay } from './format'
 import { compare, DEFAULTS, fold, fromQuery, matches, toQuery, todayLjubljana, type Filters } from './filters'
 import type { Offer } from './types'
 
@@ -45,17 +45,22 @@ describe('matches', () => {
 })
 
 describe('sort', () => {
+  it('every sort puts offers valid today before ones that start later', () => {
+    const list = [o({ id: 'later', valid_from: '2026-10-12', discount_pct: 60, price: 0.5, valid_to: '2026-10-10' }), o({ id: 'now', valid_from: T })]
+    for (const s of ['food', 'discount', 'price', 'ending', 'store'] as const)
+      expect([...list].sort(compare(s, T)).map(x => x.id)).toEqual(['now', 'later'])
+  })
   it('highest discount first, special offers last', () => {
     const list = [o({ id: 'a' }), o({ id: 'b', discount_pct: 10 }), o({ id: 'c', discount_pct: 40 })]
-    expect(list.sort(compare('discount')).map(x => x.id)).toEqual(['c', 'b', 'a'])
+    expect(list.sort(compare('discount', T)).map(x => x.id)).toEqual(['c', 'b', 'a'])
   })
   it('default puts grocery crates first, then by discount', () => {
     const list = [o({ id: 'book', category: 'drugo', discount_pct: 60 }), o({ id: 'milk', discount_pct: 10 }), o({ id: 'pear', category: 'sadje-zelenjava', discount_pct: 30 })]
-    expect(list.sort(compare('food')).map(x => x.id)).toEqual(['pear', 'milk', 'book'])
+    expect(list.sort(compare('food', T)).map(x => x.id)).toEqual(['pear', 'milk', 'book'])
   })
   it('ending soonest puts undated last', () => {
     const list = [o({ id: 'a' }), o({ id: 'b', valid_to: '2026-10-12' }), o({ id: 'c', valid_to: '2026-10-10' })]
-    expect(list.sort(compare('ending')).map(x => x.id)).toEqual(['c', 'b', 'a'])
+    expect(list.sort(compare('ending', T)).map(x => x.id)).toEqual(['c', 'b', 'a'])
   })
 })
 
@@ -79,4 +84,10 @@ it('Slovene plural, nominative and accusative', () => {
   expect([1, 2, 3, 5, 101, 103, 104].map(n => izdelkov(n))).toEqual(['1 izdelek', '2 izdelka', '3 izdelki', '5 izdelkov', '101 izdelek', '103 izdelki', '104 izdelki'])
   expect(izdelkov(103, 'acc')).toBe('103 izdelke')
   expect(izdelkov(105, 'acc')).toBe('105 izdelkov')
+})
+
+it('start day: tomorrow, else weekday and date', () => {
+  expect(startDay('2026-10-10', T)).toBe('jutri')
+  expect(startDay('2026-10-12', T)).toBe('pon. 12. 10.')
+  expect(startDay('2026-11-01', '2026-10-31')).toBe('jutri')
 })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // One authored icon set: 24px grid, 2px round strokes.
-defineProps<{ name: 'search' | 'filter' | 'heart' | 'external' | 'close' | 'chevron' | 'sort' | 'check'; size?: number }>()
+defineProps<{ name: 'search' | 'filter' | 'heart' | 'external' | 'close' | 'chevron' | 'sort' | 'check' | 'clock'; size?: number }>()
 </script>
 
 <template>
@@ -14,5 +14,6 @@ defineProps<{ name: 'search' | 'filter' | 'heart' | 'external' | 'close' | 'chev
     <template v-else-if="name === 'chevron'"><path d="m6 9 6 6 6-6" /></template>
     <template v-else-if="name === 'sort'"><path d="M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4" /></template>
     <template v-else-if="name === 'check'"><path d="m5 12 5 5 9-10" /></template>
+    <template v-else-if="name === 'clock'"><circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" /></template>
   </svg>
 </template>

@@ -46,6 +46,11 @@ export function searchText(o: Offer): string {
 
 type Facet = 'stores' | 'cats' | null
 
+/** Valid today (or undated), as opposed to an offer that starts later. */
+export function isStarted(o: Offer, today: string): boolean {
+  return !o.valid_from || o.valid_from <= today
+}
+
 /** Apply every filter except `skip` (used to compute facet counts). */
 export function matches(o: Offer, f: Filters, today: string, favs: Set<string>, skip: Facet = null, text?: string): boolean {
   if (skip !== 'stores' && f.stores.length && !f.stores.includes(o.store)) return false
@@ -56,7 +61,7 @@ export function matches(o: Offer, f: Filters, today: string, favs: Set<string>, 
   if (f.onlydisc && o.kind !== 'discount') return false
   if (f.nocard && o.requires_card) return false
   if (f.fav && !favs.has(o.id)) return false
-  const started = !o.valid_from || o.valid_from <= today
+  const started = isStarted(o, today)
   if (f.when === 'today' && !started) return false
   if (f.when === 'soon' && started) return false
   if (f.q.trim()) {
@@ -68,7 +73,13 @@ export function matches(o: Offer, f: Filters, today: string, favs: Set<string>, 
 
 const STORE_ORDER: Record<string, number> = { lidl: 0, spar: 1, eurospin: 2, hofer: 3 }
 
-export function compare(sort: Sort): (a: Offer, b: Offer) => number {
+/** Every sort keeps offers valid today ahead of those that start later. */
+export function compare(sort: Sort, today: string): (a: Offer, b: Offer) => number {
+  const by = within(sort)
+  return (a, b) => Number(isStarted(b, today)) - Number(isStarted(a, today)) || by(a, b)
+}
+
+function within(sort: Sort): (a: Offer, b: Offer) => number {
   const byDiscount = (a: Offer, b: Offer) => (b.discount_pct ?? 0) - (a.discount_pct ?? 0) || a.price - b.price
   switch (sort) {
     case 'price': return (a, b) => a.price - b.price || byDiscount(a, b)

@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import type { Offer } from '../types'
 import { storeById } from '../stores'
 import { crate } from '../theme'
-import { shortDate } from '../format'
+import { shortDate, startDay } from '../format'
 import Icon from './Icon.vue'
 
 const props = defineProps<{ offer: Offer; today: string; favourite: boolean; vt?: string }>()
@@ -31,7 +31,7 @@ const regular = computed(() => props.offer.regular_price?.toFixed(2).replace('.'
 </script>
 
 <template>
-  <article class="offer" :style="{ '--crate': crate(offer.category), viewTransitionName: vt }">
+  <article class="offer" :class="{ upcoming }" :style="{ '--crate': crate(offer.category), viewTransitionName: vt }">
     <div class="photo">
       <img
         v-if="offer.image_url && !imgFailed"
@@ -44,9 +44,12 @@ const regular = computed(() => props.offer.regular_price?.toFixed(2).replace('.'
       />
       <span v-else class="photo-empty" aria-hidden="true">{{ store.label }}</span>
 
-      <span v-if="offer.kind === 'discount'" class="pct" :aria-label="`Popust ${offer.discount_pct} odstotkov`">
-        −{{ offer.discount_pct }}<small>%</small>
-      </span>
+      <div class="corner">
+        <span v-if="offer.kind === 'discount'" class="pct" :aria-label="`Popust ${offer.discount_pct} odstotkov`">
+          −{{ offer.discount_pct }}<small>%</small>
+        </span>
+        <span v-if="upcoming" class="soon"><Icon name="clock" :size="13" />od {{ startDay(offer.valid_from!, today) }}</span>
+      </div>
 
       <button
         class="fav"
@@ -84,10 +87,9 @@ const regular = computed(() => props.offer.regular_price?.toFixed(2).replace('.'
         <template v-if="offer.unit_price">{{ offer.unit_price }}</template>
       </p>
       <div class="card-foot">
-        <span v-if="upcoming" class="when later">od {{ shortDate(offer.valid_from) }}</span>
-        <span v-else-if="endsToday" class="when last">samo še danes</span>
-        <span v-else-if="offer.valid_to" class="when">do {{ shortDate(offer.valid_to) }}</span>
-        <span v-else />
+        <span v-if="upcoming" class="when later">še ne velja</span>
+        <span v-else-if="endsToday" class="when now last">samo še danes</span>
+        <span v-else class="when now">velja{{ offer.valid_to ? ` do ${shortDate(offer.valid_to)}` : ' zdaj' }}</span>
         <a
           v-if="offer.product_url"
           :href="offer.product_url"
@@ -147,11 +149,17 @@ const regular = computed(() => props.offer.regular_price?.toFixed(2).replace('.'
   letter-spacing: .04em;
 }
 
-/* paprika discount corner */
-.pct {
+/* top-right corner: discount, then the start date of a later offer */
+.corner {
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* paprika discount corner */
+.pct {
   background: var(--paprika);
   color: #fff;
   font-weight: 900;
@@ -309,8 +317,34 @@ const regular = computed(() => props.offer.regular_price?.toFixed(2).replace('.'
   font-size: .76rem;
 }
 .when { font-weight: 700; color: var(--slate-700); }
-.when.later { color: var(--slate-900); background: var(--stone-150); padding: 1px 6px; border-radius: 5px; }
+/* valid today: a live green dot, like the freshness line */
+.when.now { display: inline-flex; align-items: center; gap: 6px; }
+.when.now::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--fresh);
+  box-shadow: 0 0 0 3px rgb(76 194 107 / .22);
+}
 .when.last { color: var(--paprika); }
+.when.later { color: var(--slate-500); }
+
+/* starts later: dashed card, faded photo, a slate start-date band */
+.offer.upcoming { border-style: dashed; background: var(--stone-50); }
+.upcoming .photo img { opacity: .55; filter: grayscale(.7); }
+.soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--slate-900);
+  color: #fff;
+  font-size: .74rem;
+  font-weight: 800;
+  padding: 5px 9px 5px 8px;
+  border-radius: 0 0 0 10px;
+  white-space: nowrap;
+}
 .go {
   display: inline-flex;
   align-items: center;
@@ -329,6 +363,7 @@ const regular = computed(() => props.offer.regular_price?.toFixed(2).replace('.'
   .stake { left: 8px; }
   .body { padding: 26px 10px 10px; }
   .name { font-size: .84rem; }
+  .soon { font-size: .68rem; padding: 4px 7px; }
   .fav { width: 32px; height: 32px; top: 6px; left: 6px; }
   .go { font-size: 0; gap: 0; }
   .go :deep(svg) { width: 16px; height: 16px; }
