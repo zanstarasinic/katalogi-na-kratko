@@ -4,7 +4,7 @@ import OfferCard from './components/OfferCard.vue'
 import Logo from './components/Logo.vue'
 import Icon from './components/Icon.vue'
 import { loadMeta, loadOffers } from './data'
-import { activeCount, compare, DEFAULTS, fromQuery, matches, searchText, toQuery, todayLjubljana, type Filters, type Sort } from './filters'
+import { activeCount, compare, DEFAULTS, fromQuery, isStarted, matches, searchText, toQuery, todayLjubljana, type Filters, type Sort } from './filters'
 import { izdelkov, price } from './format'
 import { STORES } from './stores'
 import { crate } from './theme'
@@ -69,8 +69,11 @@ const storeRows = computed(() => STORES.map(s => ({ ...s, live: !!meta.value?.st
 const match = (o: Offer, skip: 'stores' | 'cats' | null = null) =>
   matches(o, view.value, today, favs.value, skip, texts.get(o.id))
 
-const results = computed(() => offers.value.filter(o => match(o)).sort(compare(view.value.sort)))
+const results = computed(() => offers.value.filter(o => match(o)).sort(compare(view.value.sort, today)))
 const visible = computed(() => results.value.slice(0, shown.value))
+// Offers that start later sort last; a heading marks where they begin.
+const firstLater = computed(() => results.value.findIndex(o => !isStarted(o, today)))
+const laterCount = computed(() => firstLater.value < 0 ? 0 : results.value.length - firstLater.value)
 
 function countBy(key: 'store' | 'category', skip: 'stores' | 'cats') {
   const c: Record<string, number> = {}
@@ -384,15 +387,18 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
         <button type="button" class="btn solid" @click="reset">Počisti filtre</button>
       </div>
       <div v-else class="grid">
-        <OfferCard
-          v-for="(o, i) in visible"
-          :key="o.id"
-          :offer="o"
-          :today="today"
-          :favourite="favs.has(o.id)"
-          :vt="vtName(o, i)"
-          @toggle-fav="toggleFav(o.id)"
-        />
+        <template v-for="(o, i) in visible" :key="o.id">
+          <h2 v-if="i === firstLater" class="group-head">
+            <Icon name="clock" :size="16" />Prihaja v naslednjih dneh<span class="n">{{ laterCount }}</span>
+          </h2>
+          <OfferCard
+            :offer="o"
+            :today="today"
+            :favourite="favs.has(o.id)"
+            :vt="vtName(o, i)"
+            @toggle-fav="toggleFav(o.id)"
+          />
+        </template>
       </div>
       <div ref="sentinel" class="sentinel" />
       <p v-if="visible.length && visible.length < results.length" class="more">

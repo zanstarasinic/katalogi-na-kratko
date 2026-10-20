@@ -11,6 +11,7 @@
   --paper: #ffffff;
   --paprika: #d6311f;
   --yolk: #f7c51e;
+  --fresh: #4cc26b;
   --bar-h: 64px;
 
   color-scheme: light;
@@ -102,7 +103,7 @@ a { color: inherit; }
   white-space: nowrap;
 }
 .fresh b { color: #fff; font-weight: 700; }
-.fresh .dot { width: 8px; height: 8px; border-radius: 50%; background: #4cc26b; box-shadow: 0 0 0 3px rgb(76 194 107 / .25); }
+.fresh .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--fresh); box-shadow: 0 0 0 3px rgb(76 194 107 / .25); }
 
 /* ---------------------------------------------------------------- crate rail (phone) */
 .rail {
@@ -416,6 +417,19 @@ a { color: inherit; }
   grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
   gap: 18px 16px;
 }
+.group-head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding-top: 18px;
+  border-top: 2px dashed var(--stone-300);
+  font-size: 1.05rem;
+  font-weight: 860;
+  font-stretch: 85%;
+}
+.group-head .n { margin-left: 2px; }
 .skeleton-card {
   aspect-ratio: .64;
   border-radius: 12px;

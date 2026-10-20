@@ -370,7 +370,8 @@ Plain and firm, like a stall-keeper's chalkboard.
 - **Active-filter pill:** 30px slate pill with an optional swatch and a 12px close icon; "Počisti vse" is a bare underlined text pill.
 
 ### Cards / Containers
-- **Offer card:** 12px corners, paper body, 1px stone-300 border with no top border, and a 6px crate-colour edge as the lid. The photo well is 5:4, white, image contained with extra bottom padding so the stake never covers the product. A 34px translucent-white round heart sits top-left; it turns paprika and fills when saved.
+- **Offer card:** 12px corners, paper body, 1px stone-300 border with no top border, and a 6px crate-colour edge as the lid. The photo well is 5:4, white, image contained with extra bottom padding so the stake never covers the product. A 34px translucent-white round heart sits top-left; it turns paprika and fills when saved. Footer timing: a fresh-green dot with "velja do …" when valid today, paprika "samo še danes" on the last day.
+- **Offer card, starts later:** dashed border, limestone fill, faded grey photo, and a slate band with a clock under the top-right corner ("od pet. 16. 10.", or "od jutri"). Every sort lists offers valid today first; a dashed rule and "Prihaja v naslednjih dneh" heading opens the later group.
 - **Card body:** store label and struck regular price (paprika strike line) on one row, two-line name, one-line meta, then a hairline-topped foot with the validity date and an external-link to the store page (icon only on phones).
 - **Notice:** the stale-data strip, cream with a straw hairline, 10px radius.
 - **Loading:** shimmering ghost cards (0.64 aspect, 12px corners, a 6px stone lid).

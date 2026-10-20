@@ -9,6 +9,15 @@ export function shortDate(iso?: string): string {
   return `${Number(d)}. ${Number(m)}.`
 }
 
+const WEEKDAYS = ['ned.', 'pon.', 'tor.', 'sre.', 'čet.', 'pet.', 'sob.']
+
+/** When an offer starts, relative to today: 'jutri', 'pet. 16. 10.' */
+export function startDay(iso: string, today: string): string {
+  const day = (d: string) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10))
+  if (day(iso) - day(today) === 864e5) return 'jutri'
+  return `${WEEKDAYS[new Date(day(iso)).getUTCDay()]} ${shortDate(iso)}`
+}
+
 export function dateTime(iso?: string): string {
   if (!iso) return ''
   return new Intl.DateTimeFormat('sl-SI', {
